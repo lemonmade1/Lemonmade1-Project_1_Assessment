@@ -11,4 +11,4 @@
 
 
 # WebSite #
-  [Visit website](https://github.com/lemonmade1/lemonmade1-Project_1_Assessment.git "Project-1-Assessment")
+  [Visit website](https://lemonmade1.github.io/lemonmade1-Project_1_Assessment/ "Project-1-Assessment")
