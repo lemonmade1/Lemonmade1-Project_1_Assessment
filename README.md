@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img id="centered" width="70%" height="700" src="https://github.com/lemonmade1/Lemon-made-SLots/blob/gh-pages/images/Screen%20Shot:Slots.png?" raw=true>
+<img id="centered" width="70%" height="700" src="https://github.com/lemonmade1/lemonmade1-Project_1_Assessment/blob/gh-pages/images/project_1.png" raw=true>
 </p>
 
 
