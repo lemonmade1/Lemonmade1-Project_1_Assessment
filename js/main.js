@@ -31,7 +31,7 @@ $(increment).on('click', () => {
 $(decrement).on('click', () => {
 
   let _addOne = document.getElementById('addOne');
-  let spanText = span.textContent = ++x; 
+  let spanText = span.textContent = x++; 
   let _result = parseInt(spanText) - parseInt(_addOne.value);
 
   $('span').html(_result)
