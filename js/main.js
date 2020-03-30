@@ -37,7 +37,6 @@ $(decrement).on('click', () => {
   $('span').html(_result)
   console.log(--_result);
 
-
   if (parseInt(
     spanText) >= +1) {
     $('span').css({
