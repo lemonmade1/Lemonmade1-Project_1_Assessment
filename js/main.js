@@ -20,10 +20,7 @@ $(increment).on('click', () => {
   console.log(_result);
 
   if (parseInt(
-    spanText) >= -1 
-    // || 
-    // parseInt(_addOne.value) < 0
-    ) {
+    spanText) >= -1) {
     $('span').css({
       color: 'black',
     })
@@ -48,8 +45,7 @@ $(decrement).on('click', () => {
   console.log(_result);
 
 
-  if (parseInt(
-    spanText) >= +1) {
+  if (parseInt(spanText) >= +1) {
     $('span').css({
       color: 'black',
     })
