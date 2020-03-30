@@ -5,6 +5,10 @@ let increment = document.getElementById('increment');
 let decrement = document.getElementById('decrement');
 
 
+
+
+
+
 $(increment).on('click', () => {
 
   let _addOne = document.getElementById('addOne');
@@ -15,11 +19,23 @@ $(increment).on('click', () => {
   $('span').html(_result)
   console.log(_result);
 
-  if (parseInt(spanText) <= -1 || parseInt(_addOne.value) <= -1) {
+  if (parseInt(
+    spanText) >= -1 
+    // || 
+    // parseInt(_addOne.value) < 0
+    ) {
+    $('span').css({
+      color: 'black',
+    })
+      ; console.log(parseInt(spanText))
+  }
+
+  else {
     $('span').css({
       color: 'red',
     });
   };
+
 });
 
 $(decrement).on('click', () => {
@@ -27,24 +43,25 @@ $(decrement).on('click', () => {
   let _addOne = document.getElementById('addOne');
   let spanText = span.textContent = --x;
   let _result = parseInt(spanText) - parseInt(_addOne.value);
-  // let _result2 = _result * spanText;
 
   $('span').html(_result)
   console.log(_result);
 
-  if (parseInt(spanText) < 0 || parseInt(_addOne.value) < 0) {
-    $('span').css({
-      color: 'red',
-    })
-    ;console.log(parseInt(spanText))
-  }
-  
-  if (parseInt(spanText) > 0 || parseInt(_addOne.value) > 0) {
+
+  if (parseInt(
+    spanText) >= +1) {
     $('span').css({
       color: 'black',
     })
-    ;console.log(parseInt(spanText))
+      ; console.log(parseInt(spanText))
   }
+  
+  else {
+    $('span').css({
+      color: 'red',
+    });
+  };
 
 });
+
 
