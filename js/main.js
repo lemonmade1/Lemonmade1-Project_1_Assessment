@@ -25,7 +25,7 @@ $(increment).on('click', () => {
 $(decrement).on('click', () => {
 
   let _addOne = document.getElementById('addOne');
-  let spanText = span.textContent = ++x;
+  let spanText = span.textContent = --x;
   let _result = parseInt(spanText) - parseInt(_addOne.value);
   // let _result2 = _result * spanText;
 
@@ -35,6 +35,13 @@ $(decrement).on('click', () => {
   if (parseInt(spanText) < 0 || parseInt(_addOne.value) < 0) {
     $('span').css({
       color: 'red',
+    })
+    ;console.log(parseInt(spanText))
+  }
+  
+  if (parseInt(spanText) > 0 || parseInt(_addOne.value) > 0) {
+    $('span').css({
+      color: 'black',
     })
     ;console.log(parseInt(spanText))
   }
